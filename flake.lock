@@ -3,11 +3,11 @@
     "atw-kernel": {
       "flake": false,
       "locked": {
-        "lastModified": 1673398865,
-        "narHash": "sha256-2nyBnrkucIoCx+swrIPj+EfkyvF1sI7NhAoUi0y2+Pg=",
+        "lastModified": 1673402843,
+        "narHash": "sha256-ujKgbtiEBnogz+Eyd/dGQ5iXjNpuE3UgrEpaG1GIcGw=",
         "owner": "yodalf",
         "repo": "linux-atw-5.10.162",
-        "rev": "d420beb6866cd32e82911de3ce58115b53f5b6f7",
+        "rev": "7aef4fe10c79ebbfcc687da5153ac76fc2f5689f",
         "type": "github"
       },
       "original": {
@@ -55,11 +55,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1673296385,
-        "narHash": "sha256-zlDgiHh0k1GtB8g6wrBzWBDZIBoCNYXfI5+qWE5Rrjk=",
+        "lastModified": 1673435251,
+        "narHash": "sha256-slcWQtwJBLprSvNODsH/CkpjV7Hx/ByMGkuGmBr65Bw=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "92c151047e978f2e6abc809c20fb701b5b2d78b0",
+        "rev": "0abc5480edcab69f26e1bdd5f7ee82890cfe273f",
         "type": "github"
       },
       "original": {
