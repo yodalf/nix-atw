@@ -23,8 +23,8 @@
       "earlycon=ttymxc0,115200n8"
       "boot.shell_on_fail"
       "fbcon=map:0"
-      "root=/dev/disk/by-label/NIXOS"
-      "findiso=/nixos.iso"
+      #"root=/dev/disk/by-label/NIXOS"
+      #"findiso=/nixos.iso"
       ];
 
     loader = 
@@ -101,10 +101,11 @@
       # We have to use custom boot firmware since we do not support
       # StarFive's Fedora MMC partition layout. Thus, we include this in
       # the image's firmware partition so the user can flash the custom firmware.
+      
       populateFirmwareCommands = ''
       '';
      
-    populateRootCommands = ''
+      populateRootCommands = ''
         mkdir -p ./files/boot
         ${config.boot.loader.generic-extlinux-compatible.populateCmd} -c ${config.system.build.toplevel} -d ./files/boot
       '';

@@ -54,8 +54,8 @@
         makeModulesClosure = x:
           prev.makeModulesClosure (x // { allowMissing = true; });
       
-          final.tpm2-abrmd = (prev.tpm2-abrmd).overriideAttrs( final: prev: { nativeBuildInputs =  prev.nativeBuildInputs ++ [ prev.glib ];});
-        
+          tpm2-abrmd = prev.tpm2-abrmd.overrideAttrs( final: prev: { nativeBuildInputs =  prev.nativeBuildInputs ++ [ pkgs.glib ];});
+
  
         linuxPackages_atw = 
           final.linuxPackagesFor ((final.callPackage ./kernel.nix { inherit atw-kernel; }).override { 
